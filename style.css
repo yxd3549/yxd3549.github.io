@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+#header{
+    min-height: 20em;
+    color: white;
+    background-color: darkslategray;
+}
+
+#nav{
+    min-height:5em;
+    color: white;
+    list-style: none;
+    text-align: right;
+    width: 100%;
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: gray;
+}
+
+#content{
+    color: black;
+    background-color: white;
+}
+
+#footer{
+    min-height: 10em;
+    color: white;
+    background-color: darkslategray;
+}
