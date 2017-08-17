@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    border: 0;
 }
 
 body{
@@ -10,10 +11,11 @@ body{
 #header{
     min-height: 20em;
     color: white;
-    background-color: darkslategray;
+    background-color: #0c1119;
 }
 
 #nav{
+    padding-top: 1em;
     min-height:5em;
     color: white;
     list-style: none;
@@ -22,21 +24,49 @@ body{
 }
 
 #nav li{
+    border-radius: 1em;
     display: inline-block;
+    padding-right: 1em;
 }
 
 #nav li a{
+    font-size: 1.5em;
     text-decoration: none;
     color: gray;
 }
 
+#nav li a:hover{
+    color: #efefef;
+    font-size: 1.5em;
+}
+
+.title{
+    font-size: 2em;
+    text-align: center;
+    color: #efefef;
+}
+
 #content{
     color: black;
-    background-color: white;
+    background-color: #efefef;
+}
+
+.subtitle{
+    text-decoration: underline;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.6em;
+    color: black;
+}
+
+.info{
+    font-size: 1.2em;
+    text-align: center;
+    padding: .5em;
 }
 
 #footer{
     min-height: 10em;
     color: white;
-    background-color: darkslategray;
+    background-color: #0c1119;
 }
