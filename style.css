@@ -60,9 +60,12 @@ body{
 }
 
 .info{
+    display: block;
+    width: 70%;
     font-size: 1.2em;
+    padding-left: 15%;
+    padding-right: 15%;
     text-align: center;
-    padding: .5em;
 }
 
 #footer{
