@@ -13,7 +13,7 @@
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <p class="title">Welcome</p>
+        <p class="title">Welcome<?="Holler"?></p>
     </div>
     <div id="content">
         <div class="section">
