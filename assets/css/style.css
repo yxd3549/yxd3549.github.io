@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -9,14 +10,14 @@ body{
 }
 
 #header{
-    min-height: 20em;
+    min-height: 15em;
     color: white;
     background-color: #0c1119;
 }
 
 #nav{
     padding-top: 1em;
-    min-height:5em;
+    min-height: 5em;
     color: white;
     list-style: none;
     text-align: right;
@@ -30,14 +31,14 @@ body{
 }
 
 #nav li a{
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-decoration: none;
     color: gray;
 }
 
 #nav li a:hover{
     color: #efefef;
-    font-size: 1.5em;
+
 }
 
 .title{
@@ -49,27 +50,28 @@ body{
 #content{
     color: black;
     background-color: #efefef;
+    min-height: 22.3em;
 }
 
 .subtitle{
     text-decoration: underline;
     text-align: center;
-    padding: .5em;
-    font-size: 1.6em;
-    color: black;
+    padding: 1em;
+    font-size: 1.4em;
 }
 
 .info{
     display: block;
     width: 70%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 1em;
     text-align: center;
 }
 
 #footer{
-    min-height: 10em;
+    min-height: 5em;
     color: white;
     background-color: #0c1119;
 }
