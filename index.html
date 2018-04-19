@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Yancarlos Diaz - Home</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -18,8 +18,11 @@
     </div>
     <div id="content">
         <div class="section">
-            <p class="subtitle">About</p>
-            <div class="info">
+            <div class="container" onclick="document.getElementById('info1').style.display = 'block';">
+                <p class="subtitle">About Me</p>
+                <img src="assets/images/profile.png" alt="website code">
+            </div>
+            <div id="info1">
                 <p>If you're here, that means you want to know more about me.
                     I enjoy programming, but I also enjoy doing many other things.
                     In fact, what I love the most about programming is how it can apply to most things we do in life.
@@ -27,7 +30,10 @@
             </div>
         </div>
         <div class="section">
-            <p class="subtitle">Projects</p>
+            <div class="container">
+                <p class="subtitle">Projects</p>
+                <img src="assets/images/beach.png" alt="website code">
+            </div>
             <div class="info">
                 <p>I started coding in 2015. Since then, I have been part of some very cool
                     projects. I have worked in Python, Java, and C. I also recently started learning
@@ -35,14 +41,23 @@
                     projects I have worked on since I started my career.</p>
             </div>
         </div>
-        <div class="section">
-            <p class="subtitle">Contact</p>
-            <div class="info">
-                Have any questions? Find out how you can reach out to me for the quickest
-                response.
+
+        <div id="wrapper">
+            <div class="container-test" onclick="document.getElementById('info1').style.display = 'block';">
+                <p class="subtitle">About Me</p>
+                <img src="assets/images/profile.png" alt="website code">
+            </div>
+            <div class="container-test" onclick="document.getElementById('info1').style.display = 'block';">
+                <p class="subtitle">About Me</p>
+                <img src="assets/images/profile.png" alt="website code">
+            </div>
+            <div class="container-test" onclick="document.getElementById('info1').style.display = 'block';">
+                <p class="subtitle">About Me</p>
+                <img src="assets/images/profile.png" alt="website code">
             </div>
         </div>
     </div>
+
     <div id="footer">
         <h1>Footer</h1>
     </div>
