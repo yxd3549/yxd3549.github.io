@@ -9,51 +9,32 @@ body{
     width: 100%;
 }
 
-#header{
-    min-height: 15em;
-    color: white;
-    background-color: #0c1119;
-}
-
 #nav{
-    padding-top: 1em;
-    min-height: 5em;
-    color: white;
-    list-style: none;
-    text-align: right;
+    color: #525863;
+    background-color: #efefef;
+    position: fixed;
+    left: 0;
     width: 100%;
+    z-index: 1;
 }
 
-#nav li{
-    border-radius: 1em;
-    display: inline-block;
-    padding-right: 1em;
-}
-
-#nav li a{
-    font-size: 1.1em;
-    text-decoration: none;
-    color: gray;
-}
-
-#nav li a:hover{
-    color: #efefef;
-
-}
-
-.title{
-    font-size: 2em;
-    text-align: center;
-    color: #efefef;
+#nav h1{
+    padding: 10px 20px;
 }
 
 #content{
-    color: black;
+    color: #525863;
     background-color: #efefef;
     min-height: 22.3em;
 }
 
-.subtitle{
+#footer{
+    min-height: 5em;
+    color: #efefef;
+    background-color: #283549;
+}
+
+.title{
     font-size: 1.6em;
     position: absolute;
     top: 50%;
@@ -66,65 +47,13 @@ body{
     border-radius: 5px;
 }
 
-#info1{
-    display: none;
-    margin: auto;
-    width: 70%;
-    max-width: 700px;
-    font-size: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-}
-
-.centered-gallery{
-    width: 400px;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.about-img{
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    text-align: center
-}
-
-#footer{
-    min-height: 5em;
-    color: white;
-    background-color: #0c1119;
-}
-
-.section{
-    width: 100%;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.container-test{
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 30%;
-    display: inline-block;
-}
-
 #wrapper{
-    width: 100%;
+    max-width: 1700px;
     display: block;
     margin: auto;
     text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 img {
@@ -132,4 +61,20 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+}
+
+.img-container{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 30%;
+    display: inline-block;
+}
+
+.section{
+    max-width: 1200px;
+    padding-bottom: 100px;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
 }
