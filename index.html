@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/javascript/utils.js"></script>
 </head>
 <body>
     <div id="nav">
@@ -14,20 +15,24 @@
     </div>
     <div id="content">
         <div id="wrapper">
-            <div class="img-container">
+            <div id="about-image" class="img-container" onmouseover="sectionOnOver(this)"
+                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
                 <p class="title">About Me</p>
-                <img src="assets/images/profile.png" alt="website code">
+                <img src="assets/images/profile.png" alt="website code" >
             </div>
-            <div class="img-container">
+            <div id="projects-image" class="img-container" onmouseover="sectionOnOver(this)"
+                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
                 <p class="title">Projects</p>
                 <img src="assets/images/profile.png" alt="website code">
             </div>
-            <div class="img-container">
+            <div id="experience-image" class="img-container" onmouseover="sectionOnOver(this)"
+                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
                 <p class="title">Experience</p>
                 <img src="assets/images/profile.png" alt="website code">
             </div>
         </div>
         <div id="about" class="section">
+            <div class="text">
             <h2 class="section-title">About Me</h2><br>
             <p>If want to know things about me that are beyond my resume, you've come to the right place.
                 I won't try to explain my personality in a few words. People are too complex for that.
@@ -50,6 +55,7 @@
                 These include things likes playing the piano and gardening. I'm no expert in either of those things,
                 but I enjoy doing them and I have a feeling they'll become a bigger part of my life in the future.
                 </p><br>
+            </div>
         </div>
 
     </div>
