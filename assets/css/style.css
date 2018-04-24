@@ -36,16 +36,16 @@ body{
 }
 
 .title{
-    font-size: 1.6em;
+    font-size: 1.4em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #0c1119;
     opacity: .5;
-    width: 297px;
-    padding: 7px 0;
-    border-radius: 5px;
+    width: 299px;
+    padding: 3px 0;
+    border-radius: 4px;
 }
 
 #wrapper{
