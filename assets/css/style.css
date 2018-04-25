@@ -9,14 +9,14 @@ body{
     width: 100%;
 }
 
-#nav{
+#head{
     background-color: #283549;
     color: #efefef;
     width: 100%;
     min-width: 1200px;
 }
 
-#nav h1{
+#head h1{
     padding: 10px 60px;
 
 }
