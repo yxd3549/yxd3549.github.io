@@ -23,5 +23,39 @@ function switchSections(section){
         }
 
     }
-
 }
+
+var slideIndex = 1;
+var manual = false;
+showimages(slideIndex);
+
+function showimages(){
+    var things = document.getElementsByClassName("gallery-img");
+    console.log(things);
+    if (slideIndex > things.length){
+        slideIndex = 1;
+    }
+    if (slideIndex < 1){
+        slideIndex = things.length;
+    }
+    for (var i = 0; i < things.length; i++){
+        things[i].style.display = "none";
+    }
+    things[slideIndex-1].style.display = "inline-block";
+    if (!manual){
+        setTimeout(showimages, 4000);
+        slideIndex += 1;
+    }
+}
+
+function move(n){
+    if (!manual){
+        slideIndex += n - 1;
+        manual = true;
+    }
+    else {
+        slideIndex += n;
+    }
+    showimages();
+}
+

@@ -95,9 +95,27 @@ body{
     opacity: 1;
 }
 
-.section img {
+@keyframes animate{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+.gallery-img {
     position: absolute;
     top: 25%;
     margin: 0;
     vertical-align: center;
+    animation: animate 3s;
+}
+
+.buttons-div {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+.buttons {
+    padding: 5px 10px;
 }
