@@ -1,1 +1,1 @@
-Currently working on content! If you have any comments, questions or concerns contact through email ay yxd3549@rit.edu or ydiazs1998@gmail.com
+Currently working on content! If you have any comments, questions or concerns contact through email at yxd3549@rit.edu or ydiazs1998@gmail.com
