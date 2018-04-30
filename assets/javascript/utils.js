@@ -1,36 +1,79 @@
-var current = "about-image";
+var currentImage = "about-image";
+var currentSection = 'about';
 
-function sectionDefault(section){
-    section.style.cursor = "default";
-    if (section.id !== current) {
-        section.style.opacity = .5;
+function sectionImageDefault(sectionImage){
+    sectionImage.style.cursor = "default";
+    if (sectionImage.id !== currentImage) {
+        sectionImage.style.opacity = .5;
     }
 }
-function sectionOnOver(section){
-    section.style.opacity = 1;
-    section.style.cursor = "pointer";
+function sectionImageOnOver(sectionImage){
+    sectionImage.style.opacity = 1;
+    sectionImage.style.cursor = "pointer";
 }
 
-function switchSections(section){
-    current = section.id;
-    var sections = document.getElementsByClassName("img-container");
-    for (var i = 0; i < sections.length; i++){
-        if (sections[i].id === current){
-            sectionOnOver(sections[i]);
+function switchSectionImages(section){
+    currentImage = section.id;
+    var sectionImages = document.getElementsByClassName("img-container");
+    for (var i = 0; i < sectionImages.length; i++){
+        if (sectionImages[i].id === currentImage){
+            sectionImageOnOver(sectionImages[i]);
         }
         else{
-            sectionDefault(sections[i]);
+            sectionImageDefault(sectionImages[i]);
         }
+    }
+}
 
+function displayAbout(){
+    currentSection = "about";
+    document.getElementById("about").style.display = "block";
+    var sections = document.getElementsByClassName("section");
+    for (var i = 0; i < sections.length; i++){
+        if (sections[i]. id !== "about"){
+            console.log(sections[i].id);
+            sections[i].style.display = "none"
+        }
+    }
+}
+
+function displayProjects(){
+    currentSection = "projects";
+    document.getElementById("projects").style.display = "block";
+    var sections = document.getElementsByClassName("section");
+    for (var i = 0; i < sections.length; i++){
+        if (sections[i]. id !== "projects"){
+            sections[i].style.display = "none"
+        }
+    }
+}
+
+function displayExperience(){
+    currentSection = "experience";
+    document.getElementById("experience").style.display = "block";
+    var sections = document.getElementsByClassName("section");
+    for (var i = 0; i < sections.length; i++){
+        if (sections[i]. id !== "experience"){
+            sections[i].style.display = "none"
+        }
     }
 }
 
 var slideIndex = 1;
 var manual = false;
-showimages(slideIndex);
+showimages();
 
 function showimages(){
-    var things = document.getElementsByClassName("gallery-img");
+    var things = []
+    if (currentSection === "about"){
+        things = document.getElementsByClassName("about-gallery");
+    }
+    else if (currentSection === "projects"){
+        things = document.getElementsByClassName("projects-gallery");
+    }
+    else{
+        things = document.getElementsByClassName("experience-gallery");
+    }
     console.log(things);
     if (slideIndex > things.length){
         slideIndex = 1;

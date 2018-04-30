@@ -14,18 +14,18 @@
     </div>
     <div id="content">
         <div id="wrapper">
-            <div id="about-image" class="img-container" onmouseover="sectionOnOver(this)"
-                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
+            <div id="about-image" class="img-container" onmouseover="sectionImageOnOver(this)"
+                 onmouseleave="sectionImageDefault(this)" onclick="switchSectionImages(this); displayAbout();">
                 <p class="title">About Me</p>
                 <img src="assets/images/profile.png" alt="website code" >
             </div>
-            <div id="projects-image" class="img-container" onmouseover="sectionOnOver(this)"
-                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
+            <div id="projects-image" class="img-container" onmouseover="sectionImageOnOver(this)"
+                 onmouseleave="sectionImageDefault(this)" onclick="switchSectionImages(this); displayProjects();">
                 <p class="title">Projects</p>
                 <img src="assets/images/projects.png" alt="website code">
             </div>
-            <div id="experience-image" class="img-container" onmouseover="sectionOnOver(this)"
-                 onmouseleave="sectionDefault(this)" onclick="switchSections(this)">
+            <div id="experience-image" class="img-container" onmouseover="sectionImageOnOver(this)"
+                 onmouseleave="sectionImageDefault(this)" onclick="switchSectionImages(this); displayExperience();">
                 <p class="title">Experience</p>
                 <img src="assets/images/experience.png" alt="website code">
             </div>
@@ -63,9 +63,35 @@
                     worry about.
                 </p>
             </div>
-            <div class="gallery-img"><img src="assets/images/beach.png" alt="Beach Volleyball"></div>
-            <div class="gallery-img"><img src="assets/images/hackdiscussion.png" alt="HackUpstate Discussion"></div>
-            <div class="gallery-img"><img src="assets/images/brickhack4.png" alt="BrickHack4 Group"></div>
+            <div class="about-gallery"><img src="assets/images/beach.png" alt="Beach Volleyball"></div>
+            <div class="about-gallery"><img src="assets/images/hackdiscussion.png" alt="HackUpstate Discussion"></div>
+            <div class="about-gallery"><img src="assets/images/brickhack4.png" alt="BrickHack4 Group"></div>
+            <div class="buttons-div">
+                <button class="buttons" onclick=move(-1);>◀</button>
+                <button class="buttons" onclick=move(1);>▶</button>
+            </div>
+        </div>
+        <div id="projects" class="section">
+            <div class="text">
+                <h2 class="section-title">About Me</h2><br>
+                <p></p><br>
+            </div>
+            <div class="projects-gallery"><img src="assets/images/beach.png" alt="Beach Volleyball"></div>
+            <div class="projects-gallery"><img src="assets/images/hackdiscussion.png" alt="HackUpstate Discussion"></div>
+            <div class="projects-gallery"><img src="assets/images/brickhack4.png" alt="BrickHack4 Group"></div>
+            <div class="buttons-div">
+                <button class="buttons" onclick=move(-1);>◀</button>
+                <button class="buttons" onclick=move(1);>▶</button>
+            </div>
+        </div>
+        <div id="experience" class="section">
+            <div class="text">
+                <h2 class="section-title">About Me</h2><br>
+                <p></p><br>
+            </div>
+            <div class="experience-gallery"><img src="assets/images/beach.png" alt="Beach Volleyball"></div>
+            <div class="experience-gallery"><img src="assets/images/hackdiscussion.png" alt="HackUpstate Discussion"></div>
+            <div class="experience-gallery"><img src="assets/images/brickhack4.png" alt="BrickHack4 Group"></div>
             <div class="buttons-div">
                 <button class="buttons" onclick=move(-1);>◀</button>
                 <button class="buttons" onclick=move(1);>▶</button>
