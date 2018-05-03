@@ -28,13 +28,6 @@ body{
     min-width: 1200px;
 }
 
-#footer{
-    min-height: 5em;
-    color: #efefef;
-    background-color: #283549;
-    min-width: 1200px;
-}
-
 .title{
     font-size: 1.4em;
     position: absolute;
@@ -120,6 +113,39 @@ body{
     top: -120px;
 }
 
+#experience .buttons-div{
+    top: -230px;
+}
+
 .buttons {
     padding: 5px 10px;
+    background-color: gainsboro;
+}
+
+.buttons:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+#footer span{
+    margin: 40px;
+    display: inline-block;
+}
+
+a {
+    color: #efefef;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#footer{
+    min-height: 5em;
+    color: #efefef;
+    background-color: #283549;
+    min-width: 1200px;
+    font-size: 1em;
+    text-align: center;
 }
