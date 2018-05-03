@@ -10,10 +10,10 @@ body{
 }
 
 #head{
-    background-color: #283549;
-    color: #efefef;
     width: 100%;
+    text-align: center;
     min-width: 1200px;
+    padding-top: 30px;
 }
 
 #head h1{
@@ -47,7 +47,7 @@ body{
     display: block;
     margin: auto;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 40px;
 
 }
