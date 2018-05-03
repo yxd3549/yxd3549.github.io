@@ -71,6 +71,7 @@ var manual = false;
 showimages();
 
 function showimages(){
+
     var things = [];
     if (currentSection === "about"){
         things = document.getElementsByClassName("about-gallery");
@@ -100,9 +101,17 @@ function showimages(){
 
 function move(n){
     if (!manual){
+        clearTimeout(timeout);
         manual = true;
+        if (n === -1){
+            slideIndex -= 2;
+        }
     }
-    slideIndex += n;
-    showimages();
+    else{
+        slideIndex += n;
+    }
+    showimages()
+
+
 }
 
