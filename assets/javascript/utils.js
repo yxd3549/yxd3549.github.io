@@ -1,5 +1,6 @@
 var currentImage = "about-image";
 var currentSection = 'about';
+var timeout;
 
 function sectionImageDefault(sectionImage){
     sectionImage.style.cursor = "default";
@@ -35,6 +36,8 @@ function displayAbout(){
             sections[i].style.display = "none"
         }
     }
+    clearTimeout(timeout);
+    showimages();
 }
 
 function displayProjects(){
@@ -46,6 +49,8 @@ function displayProjects(){
             sections[i].style.display = "none"
         }
     }
+    clearTimeout(timeout);
+    showimages();
 }
 
 function displayExperience(){
@@ -57,6 +62,8 @@ function displayExperience(){
             sections[i].style.display = "none"
         }
     }
+    clearTimeout(timeout);
+    showimages();
 }
 
 var slideIndex = 1;
@@ -64,7 +71,7 @@ var manual = false;
 showimages();
 
 function showimages(){
-    var things = []
+    var things = [];
     if (currentSection === "about"){
         things = document.getElementsByClassName("about-gallery");
     }
@@ -86,19 +93,16 @@ function showimages(){
     }
     things[slideIndex-1].style.display = "inline-block";
     if (!manual){
-        setTimeout(showimages, 4000);
+        timeout = setTimeout(showimages, 4000);
         slideIndex += 1;
     }
 }
 
 function move(n){
     if (!manual){
-        slideIndex += n - 1;
         manual = true;
     }
-    else {
-        slideIndex += n;
-    }
+    slideIndex += n;
     showimages();
 }
 

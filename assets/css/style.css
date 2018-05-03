@@ -82,6 +82,7 @@ body{
     margin: auto;
     font-size: 1.1em;
     position: relative;
+    animation: animate 3s;
 }
 
 #about{
@@ -108,7 +109,6 @@ body{
     position: absolute;
     top: 25%;
     margin: 0;
-    vertical-align: center;
     animation: animate 3s;
 }
 
