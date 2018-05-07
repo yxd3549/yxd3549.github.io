@@ -82,7 +82,6 @@ function showimages(){
     else{
         things = document.getElementsByClassName("experience-gallery");
     }
-    console.log(things);
     if (slideIndex > things.length){
         slideIndex = 1;
     }
