@@ -126,6 +126,10 @@ body{
     top: -230px;
 }
 
+#projects .buttons-div{
+    top: -245px;
+}
+
 .buttons {
     padding: 5px 10px;
     background-color: gainsboro;
