@@ -17,6 +17,7 @@ body{
     padding-top: 30px;
     display: inline-block;
     font-weight: lighter;
+    font-size: 3em;
 }
 
 .blink{
@@ -162,4 +163,27 @@ a:hover{
     min-width: 1200px;
     font-size: 1em;
     text-align: center;
+}
+
+@media only screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    .text{
+        width: 90%;
+        padding: 0 40px;
+    }
+    .about-gallery, .projects-gallery, .experience-gallery {
+        width: 100%;
+        margin: auto;
+        animation: animate 3s;
+        position: initial;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-device-width : 700px){
+    .buttons-div{
+        position: initial;
+        text-align: center;
+        width: 100%;
+    }
 }
