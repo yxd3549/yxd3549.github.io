@@ -111,25 +111,30 @@ body{
 
 .about-gallery, .projects-gallery, .experience-gallery {
     position: absolute;
-    top: 25%;
+    top: 7%;
     margin: 0;
     animation: animate 3s;
 }
 
+.wrap{
+    width: 33%;
+    display: inline-block;
+}
+
 .buttons-div {
     display: inline-block;
-    width: 33%;
+    width: 100%;
     text-align: center;
     position: relative;
-    top: -120px;
+    top: -278px;
 }
 
 #experience .buttons-div{
-    top: -230px;
+    top: -415px;
 }
 
 #projects .buttons-div{
-    top: -245px;
+    top: -432px;
 }
 
 .buttons {
@@ -166,17 +171,13 @@ a:hover{
 }
 
 @media only screen and (min-device-width : 100px) and (max-device-width : 480px) {
+
+}
+
+@media only screen and (max-device-width : 700px){
     .text{
         width: 90%;
         padding: 0 40px;
-    }
-    .about-gallery, .projects-gallery, .experience-gallery {
-        width: 100%;
-        margin: auto;
-        animation: animate 3s;
-        position: initial;
-        text-align: center;
-        padding-top: 20px;
     }
     .section, #footer, .title{
         font-size: 2em;
@@ -185,12 +186,7 @@ a:hover{
     #head{
         font-size: 4em;
     }
-}
-
-@media only screen and (max-device-width : 700px){
-    .buttons-div{
-        position: initial;
-        text-align: center;
-        width: 100%;
+    .wrap{
+        display: none;
     }
 }
