@@ -45,10 +45,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #0c1119;
-    opacity: .5;
+    opacity: .7;
     width: 299px;
     padding: 3px 0;
     border-radius: 4px;
+    color: white;
 }
 
 #wrapper{
@@ -143,7 +144,7 @@ body{
 }
 
 #footer span{
-    margin: 40px;
+    padding: 40px;
     display: inline-block;
 }
 
@@ -157,7 +158,6 @@ a:hover{
 }
 
 #footer{
-    min-height: 5em;
     color: #efefef;
     background-color: #283549;
     min-width: 1200px;
@@ -177,6 +177,13 @@ a:hover{
         position: initial;
         text-align: center;
         padding-top: 20px;
+    }
+    .section, #footer, .title{
+        font-size: 2em;
+    }
+
+    #head{
+        font-size: 4em;
     }
 }
 
