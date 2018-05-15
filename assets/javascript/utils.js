@@ -1,3 +1,4 @@
+
 var currentImage = "about-image";
 var currentSection = 'about';
 var timeout;

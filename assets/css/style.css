@@ -126,7 +126,7 @@ body{
     width: 100%;
     text-align: center;
     position: relative;
-    top: -278px;
+    top: -260px;
 }
 
 #experience .buttons-div{
@@ -134,7 +134,7 @@ body{
 }
 
 #projects .buttons-div{
-    top: -432px;
+    top: -490px;
 }
 
 .buttons {
