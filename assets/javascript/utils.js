@@ -93,25 +93,10 @@ function showimages(){
         things[i].style.display = "none";
     }
     things[slideIndex-1].style.display = "inline-block";
-    if (!manual){
-        timeout = setTimeout(showimages, 4000);
-        slideIndex += 1;
-    }
 }
 
 function move(n){
-    if (!manual){
-        clearTimeout(timeout);
-        manual = true;
-        if (n === -1){
-            slideIndex -= 2;
-        }
-    }
-    else{
-        slideIndex += n;
-    }
-    showimages()
-
-
+    slideIndex += n;
+    showimages();
 }
 

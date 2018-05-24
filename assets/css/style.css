@@ -153,9 +153,12 @@ body{
     display: inline-block;
 }
 
-a {
-    color: #efefef;
+a{
     text-decoration: none;
+}
+
+#footer a {
+    color: #efefef;
 }
 
 a:hover{
