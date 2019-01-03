@@ -3,12 +3,21 @@ var currentImage = "about-image";
 var currentSection = 'about';
 var timeout;
 
+/**
+ * Sets the section image to a 50% opacity if it's not the current active section.
+ * @param sectionImage - The image div to consider
+ */
 function sectionImageDefault(sectionImage){
     sectionImage.style.cursor = "default";
     if (sectionImage.id !== currentImage) {
         sectionImage.style.opacity = .5;
     }
 }
+
+/**
+ * Sets the section image to 100% opacity and changes the cursor to a pointer
+ * @param sectionImage - The image div in question
+ */
 function sectionImageOnOver(sectionImage){
     sectionImage.style.opacity = 1;
     sectionImage.style.cursor = "pointer";

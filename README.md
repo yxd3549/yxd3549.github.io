@@ -1,1 +1,1 @@
-Currently working on content! If you have any comments, questions or concerns contact through email at yxd3549@rit.edu or ydiazs1998@gmail.com
+New year, new update. Currently updating.
